@@ -1,0 +1,192 @@
+
+(session "Inverting Amplifier.ses"
+  (base_design "Inverting Amplifier.dsn")
+  (placement
+    (resolution um 10)
+    (component Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical
+      (place J3 1130300 -927100 front 180)
+    )
+    (component Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical
+      (place J2 1117600 -965200 front 90)
+      (place J1 1130300 -863600 front 270)
+    )
+    (component "Package_DIP:DIP-8_W7.62mm"
+      (place U1 1282700 -876300 front 270)
+    )
+    (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
+      (place R2 1333500 -876300 front 270)
+    )
+    (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal::1
+      (place R1 1371600 -952500 front 90)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "5.1.6-c6e7f7d~86~ubuntu20.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net GND
+        (wire
+          (path B.Cu 2500
+            1117600 -965200
+            1117600 -918847
+            1122047 -914400
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1117600 -863600
+            1117600 -909953
+            1122047 -914400
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1130300 -914400
+            1122047 -914400
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1231900 -876300
+            1220647 -876300
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1220647 -876300
+            1220647 -879113
+            1185360 -914400
+            1130300 -914400
+          )
+        )
+      )
+      (net "Net-(J1-Pad1)"
+        (wire
+          (path F.Cu 2500
+            1130300 -863600
+            1138553 -863600
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1371600 -876300
+            1361347 -876300
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1361347 -876300
+            1345077 -860030
+            1142123 -860030
+            1138553 -863600
+          )
+        )
+      )
+      (net "Net-(J2-Pad2)"
+        (wire
+          (path F.Cu 2500
+            1323247 -952500
+            1311994 -963753
+            1231900 -963753
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1231900 -963753
+            1230453 -965200
+            1138553 -965200
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1231900 -952500
+            1231900 -963753
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1130300 -965200
+            1138553 -965200
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1333500 -952500
+            1323247 -952500
+          )
+        )
+      )
+      (net "-12V"
+        (wire
+          (path F.Cu 2500
+            1130300 -901700
+            1138553 -901700
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1206500 -876300
+            1163953 -876300
+            1138553 -901700
+          )
+        )
+      )
+      (net +12V
+        (wire
+          (path F.Cu 2500
+            1257300 -952500
+            1246047 -952500
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1246047 -952500
+            1246047 -949687
+            1223460 -927100
+            1130300 -927100
+          )
+        )
+      )
+      (net "Net-(R1-Pad1)"
+        (wire
+          (path F.Cu 2500
+            1268553 -876300
+            1268553 -869266
+            1272772 -865047
+            1322247 -865047
+            1333500 -876300
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1257300 -876300
+            1268553 -876300
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1371600 -952500
+            1333500 -914400
+            1333500 -876300
+          )
+        )
+      )
+    )
+  )
+)
