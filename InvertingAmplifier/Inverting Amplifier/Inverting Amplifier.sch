@@ -29,7 +29,7 @@ L Device:R R1
 U 1 1 5EDA4895
 P 4900 3800
 F 0 "R1" V 5000 3800 50  0000 C CNN
-F 1 "10k" V 4800 3800 50  0000 C CNN
+F 1 "1k" V 4800 3800 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 4830 3800 50  0001 C CNN
 F 3 "~" H 4900 3800 50  0001 C CNN
 	1    4900 3800
@@ -40,7 +40,7 @@ L Device:R R2
 U 1 1 5EDA4E88
 P 5550 4350
 F 0 "R2" V 5450 4350 50  0000 C CNN
-F 1 "1k" V 5650 4350 50  0000 C CNN
+F 1 "10k" V 5650 4350 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5480 4350 50  0001 C CNN
 F 3 "~" H 5550 4350 50  0001 C CNN
 	1    5550 4350
@@ -175,7 +175,7 @@ U 1 1 5EDB2A80
 P 3800 4850
 F 0 "J3" V 3900 4650 50  0000 C CNN
 F 1 "Power" V 3750 4850 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical_SMD_Pin1Right" H 3800 4850 50  0001 C CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x03_P1.27mm_Vertical" H 3800 4850 50  0001 C CNN
 F 3 "~" H 3800 4850 50  0001 C CNN
 	1    3800 4850
 	1    0    0    -1  
@@ -227,67 +227,38 @@ Wire Wire Line
 	6450 4750 5300 4750
 Connection ~ 5300 4750
 Connection ~ 4650 4750
-$Comp
-L Connector:Conn_01x01_Male J1
-U 1 1 5EDEA4EA
-P 3750 3900
-F 0 "J1" H 3700 3900 50  0000 C CNN
-F 1 "Vin" H 3850 3850 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical" H 3750 3900 50  0001 C CNN
-F 3 "~" H 3750 3900 50  0001 C CNN
-	1    3750 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J2
-U 1 1 5EDEA83A
-P 3750 4050
-F 0 "J2" H 3700 4050 50  0000 C CNN
-F 1 "GND" H 3850 4000 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical" H 3750 4050 50  0001 C CNN
-F 3 "~" H 3750 4050 50  0001 C CNN
-	1    3750 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J6
-U 1 1 5EDEA9DD
-P 6800 3700
-F 0 "J6" H 6800 3700 50  0000 R CNN
-F 1 "GND" H 7000 3750 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical" H 6800 3700 50  0001 C CNN
-F 3 "~" H 6800 3700 50  0001 C CNN
-	1    6800 3700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Male J5
-U 1 1 5EDEAE32
-P 6800 3550
-F 0 "J5" H 6750 3550 50  0000 R CNN
-F 1 "Vo" H 6950 3600 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x01_P1.27mm_Vertical" H 6800 3550 50  0001 C CNN
-F 3 "~" H 6800 3550 50  0001 C CNN
-	1    6800 3550
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6450 4750 6450 3700
 Wire Wire Line
-	6450 3700 6600 3700
-Wire Wire Line
-	6050 3600 6600 3600
-Wire Wire Line
-	6600 3600 6600 3550
-Wire Wire Line
-	3950 3900 4750 3900
-Wire Wire Line
 	4750 3900 4750 3800
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5EE0246D
+P 3850 3900
+F 0 "J1" H 3950 3750 50  0000 C CNN
+F 1 "Vin" H 3800 3850 50  0000 C CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical" H 3850 3900 50  0001 C CNN
+F 3 "~" H 3850 3900 50  0001 C CNN
+	1    3850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5EE0313E
+P 6650 3700
+F 0 "J2" H 6800 3500 50  0000 R CNN
+F 1 "Vo" H 6800 3750 50  0000 R CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical" H 6650 3700 50  0001 C CNN
+F 3 "~" H 6650 3700 50  0001 C CNN
+	1    6650 3700
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	3900 4050 3950 4050
+	4050 3900 4750 3900
 Wire Wire Line
-	4650 4050 4650 4750
-Connection ~ 3950 4050
+	4050 4000 4650 4000
 Wire Wire Line
-	3950 4050 4650 4050
+	4650 4000 4650 4750
+Wire Wire Line
+	6450 3600 6050 3600
 $EndSCHEMATC
